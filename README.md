@@ -42,7 +42,7 @@ sfdx force:config:set defaultusername=<Org Name>
 ```
 <br/>
 
-## Source Control
+## Meta Data Management
 ### Push source meta data to an Org 
 ```
 sfdx force:source:push -u <Org Name>
@@ -65,7 +65,11 @@ sfdx force:source:push -u <Org Name 2>
 ```
 <br/>
 
-## Managing Org Security
+## Org Security
+### Grant permission set to default user
+```
+sfdx force:user:permset:assign -n <Permission Set Name> -u <Org Name>
+```
 <br/>
 
 ## Test and Deploy
