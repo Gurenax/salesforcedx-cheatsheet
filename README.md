@@ -73,3 +73,19 @@ sfdx force:user:permset:assign -n <Permission Set Name> -u <Org Name>
 <br/>
 
 ## Test and Deploy
+### Convert source meta data to Meta Data API Package
+```
+mkdir <Output Directory>
+sfdx force:source:convert -d <Output Directory>
+```
+
+### Check and Run All Tests
+```
+sfdx force:mdapi:deploy -w 10 -l RunAllTestsInOrg -d <Output Directory> -u <Org Name> -c
+```
+
+
+### Run All Tests and Deploy
+```
+sfdx force:mdapi:deploy -w 10 -l RunAllTestsInOrg -d <Output Directory> -u <Org Name>
+```
