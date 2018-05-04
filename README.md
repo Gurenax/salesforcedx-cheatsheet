@@ -1,11 +1,13 @@
 # Salesforce DX Cheatsheet
 A quick reference to common SFDX commands
 
+## Authentication
 ### Connect Salesforce DX to an Org (e.g. DevHub, Sandbox, Production)
 ```
 sfdx force:auth:web:login -d -a AhpraDevHub
 ```
 
+## Scratch Org Management
 ### Create a Blank SFDX Project
 ```
 sfdx force:project:create -n <Project Name>
@@ -36,3 +38,7 @@ sfdx force:org:list --clean
 ```
 sfdx force:config:set defaultusername=<Scratch Org Name>
 ```
+
+## Source Control
+## Managing Org Security
+## Test and Deploy
