@@ -72,6 +72,22 @@ sfdx force:user:permset:assign -n <Permission Set Name> -u <Org Name>
 ```
 <br/>
 
+## Data Management
+### Exporting data from an Org to a file
+```
+sfdx force:data:tree:export -q "SELECT Name, Custom__c FROM Account WHERE Name != NULL AND Custom__c != NULL" -d ./data -u 
+```
+
+### Importing data to an Org from a single file (e.g. Account)
+```
+sfdx force:data:tree:import -f data/Account.json -u <Org Name>
+```
+
+### Importing data to an Org from multiple files using a plan
+```
+sfdx force:data:tree:import -p data/<plan file>.json -u <Org Name>
+```
+
 ## Test and Deploy
 ### Convert source meta data to Meta Data API Package
 ```
