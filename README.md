@@ -87,6 +87,7 @@ sfdx force:data:tree:import -f data/Account.json -u <Org Name>
 ```
 sfdx force:data:tree:import -p data/<plan file>.json -u <Org Name>
 ```
+<br/>
 
 ## Test and Deploy
 ### Convert source meta data to Meta Data API Package
