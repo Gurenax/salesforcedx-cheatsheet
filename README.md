@@ -2,6 +2,15 @@
 A quick reference to common SFDX commands
 <br/><br/>
 
+## Contents
+### Authentication
+### Scratch Org Management
+### Meta Data Management
+### Org Security
+### Test Data Management
+### Test and Deploy
+<br/><br/>
+
 ## Authentication
 ### Connect Salesforce DX to an Org (e.g. DevHub, Sandbox, Production)
 ```
@@ -72,7 +81,7 @@ sfdx force:user:permset:assign -n <Permission Set Name> -u <Org Name>
 ```
 <br/>
 
-## Data Management
+## Test Data Management
 ### Exporting data from an Org to a file
 ```
 sfdx force:data:tree:export -q "SELECT Name, Custom__c FROM Account WHERE Name != NULL AND Custom__c != NULL" -d ./data -u 
