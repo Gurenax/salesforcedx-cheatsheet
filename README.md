@@ -9,16 +9,15 @@ A quick reference to common SFDX commands
 ### [Org Security](#orgSecurity)
 ### [Test Data Management](#testDataManagement)
 ### [Test and Deploy](#testAndDeploy)
-<br/><br/>
 
-## Authentication
+## <a href="#authentication"></a>Authentication
 ### Connect Salesforce DX to an Org (e.g. DevHub, Sandbox, Production)
 ```
 sfdx force:auth:web:login -d -a AhpraDevHub
 ```
-<br/>
 
-## <a href="#authentication"></a>Scratch Org Management
+
+## <a href="#scratchOrgManagement"></a>Scratch Org Management
 ### Create a Blank SFDX Project
 ```
 sfdx force:project:create -n <Project Name>
