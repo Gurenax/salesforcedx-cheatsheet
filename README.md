@@ -3,22 +3,22 @@ A quick reference to common SFDX commands
 <br/><br/>
 
 ## Contents
-### Authentication
-### Scratch Org Management
-### Meta Data Management
-### Org Security
-### Test Data Management
-### Test and Deploy
+### [Authentication](#authentication)
+### [Scratch Org Management](#scratchOrgManagement)
+### [Meta Data Management](#metaDataManagement)
+### [Org Security](#orgSecurity)
+### [Test Data Management](#testDataManagement)
+### [Test and Deploy](#testAndDeploy)
 <br/><br/>
 
-## Authentication
+## <a href="#authentication"></a>Authentication
 ### Connect Salesforce DX to an Org (e.g. DevHub, Sandbox, Production)
 ```
 sfdx force:auth:web:login -d -a AhpraDevHub
 ```
 <br/>
 
-## Scratch Org Management
+## <a href="#scratchOrgManagement"></a>Scratch Org Management
 ### Create a Blank SFDX Project
 ```
 sfdx force:project:create -n <Project Name>
@@ -51,7 +51,7 @@ sfdx force:config:set defaultusername=<Org Name>
 ```
 <br/>
 
-## Meta Data Management
+## <a href="#metaDataManagement"></a>Meta Data Management
 ### Push source meta data to an Org 
 ```
 sfdx force:source:push -u <Org Name>
@@ -74,14 +74,14 @@ sfdx force:source:push -u <Org Name 2>
 ```
 <br/>
 
-## Org Security
+## <a href="#orgSecurity"></a>Org Security
 ### Grant permission set to default user
 ```
 sfdx force:user:permset:assign -n <Permission Set Name> -u <Org Name>
 ```
 <br/>
 
-## Test Data Management
+## <a href="#testDataManagement"></a>Test Data Management
 ### Exporting data from an Org to a file
 ```
 sfdx force:data:tree:export -q "SELECT Name, Custom__c FROM Account WHERE Name != NULL AND Custom__c != NULL" -d ./data -u 
@@ -98,7 +98,7 @@ sfdx force:data:tree:import -p data/<plan file>.json -u <Org Name>
 ```
 <br/>
 
-## Test and Deploy
+## <a href="#testAndDeploy"></a>Test and Deploy
 ### Convert source meta data to Meta Data API Package
 ```
 mkdir <Output Directory>
