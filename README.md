@@ -105,13 +105,24 @@ mkdir <Output Directory>
 sfdx force:source:convert -d <Output Directory>
 ```
 
-### Check and Run All Tests
+### Check and Run All Local Tests
+```
+sfdx force:mdapi:deploy -w 10 -l RunLocalTests -d <Output Directory> -u <Org Name> -c
+```
+
+
+### Run All Local Tests and Deploy
+```
+sfdx force:mdapi:deploy -w 10 -l RunLocalTests -d <Output Directory> -u <Org Name>
+```
+
+### Check and Run All Tests in Org
 ```
 sfdx force:mdapi:deploy -w 10 -l RunAllTestsInOrg -d <Output Directory> -u <Org Name> -c
 ```
 
 
-### Run All Tests and Deploy
+### Run All Tests in Org and Deploy
 ```
 sfdx force:mdapi:deploy -w 10 -l RunAllTestsInOrg -d <Output Directory> -u <Org Name>
 ```
