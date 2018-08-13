@@ -16,12 +16,13 @@ A quick reference to common SFDX commands
 ```
 sfdx force:auth:web:login -d -a <Name of Org to be Authenticated>
 ```
-<br/>
 
 ### Generate a Password for the Org User
 ```
 sfdx force:user:password:generate -u <Org Name>
 ```
+<br/>
+
 
 ## <a id="scratchOrgManagement"></a>Scratch Org Management
 ### Create a Blank SFDX Project
